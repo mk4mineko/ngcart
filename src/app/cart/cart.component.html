@@ -1,0 +1,5 @@
+<a routerLink="/home">home</a>
+
+<ul>
+  <li *ngFor="let product of cart; let i = index;" (click)="removeToCart(i)">{{product.name}}</li>
+</ul>

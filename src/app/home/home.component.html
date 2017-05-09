@@ -1,0 +1,7 @@
+
+<a routerLink="/cart">cart</a>
+
+
+<ul>
+  <li *ngFor="let product of products" (click)="addToCart(product)">{{product.name}}</li>
+</ul>
